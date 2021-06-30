@@ -31,21 +31,6 @@ body {
   background-color: #070217;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 80px 0;
-  width: 1170px;
-}
-
-.container h1, .container p, .container h2, .container h3 {
-  margin: 0;
-}
-
-.container ul, .container ol {
-  padding-left: 0;
-  margin: 0;
-}
-
 .main-content__logo,
 .main-content__links {
   margin-bottom: 50px;
@@ -60,51 +45,77 @@ body {
   margin-right: 25px;
 }
 
-.container h1, .container p:not([class^='last-p']) {
+.container {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 1170px;
+}
+
+.title, .text {
+  margin: 0;
+}
+
+.list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.container__title,
+.text {
   margin-bottom: 40px;
 }
 
-.container p {
+.text {
   width: 872px;
 }
 
-.container .gray-block {
+.text--is-last {
+  margin-bottom: 0;
+}
+
+.container__gray {
+  margin-bottom: 40px;
+}
+
+.container__gray--is-last,
+.container__gray--is-last .gray__text {
+  margin-bottom: 0;
+}
+
+.gray {
   border-radius: 20px;
   padding: 30px;
   background-color: #f3f3f3;
 }
 
-.container .gray-block:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.container .gray-block p {
+.gray__text {
   width: 692px;
-}
-
-.container .gray-block p:not([class^='last-p']) {
   margin-bottom: 10px;
 }
 
-.container h2, .container h3 {
+.gray__title--is-h2,
+.gray__title--is-h3 {
   margin-bottom: 10px;
 }
 
-.container ul, .container ol {
+.gray .list {
   padding-left: 15px;
 }
 
-.container ul>li:not(:last-child),
-.container ol>li:not(:last-child) {
+.list__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.container figure {
+.pic {
   display: inline-block;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   width: 872px;
 }
 
-.container img {
+.photo {
   margin-bottom: 40px;
+}
+
+.pic .photo {
+  margin-bottom: 0;
 }
