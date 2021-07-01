@@ -74,7 +74,7 @@ body {
 }
 
 .container__title,
-.text {
+.text:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -192,4 +192,12 @@ body {
   font-weight: 400;
   font-size: 14px;
   text-align: center;
+}
+
+.container__basics,
+.container__nextelindents,
+.container__siblingselindents,
+.container__lastelindents,
+.container__example {
+  margin-bottom: 40px;
 }
