@@ -31,31 +31,26 @@ body {
   background-color: #070217;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 80px 0;
-  width: 1170px;
-}
-
-.container h1, .container p, .container h2, .container h3 {
-  margin: 0;
-}
-
-.container ul, .container ol {
-  padding-left: 0;
-  margin: 0;
-}
-
 .main-content__logo,
 .main-content__links {
   margin-bottom: 50px;
 }
 
-.main-links__url {
-  font-size: 18px;
+.main-content__url {
   font-weight: 700;
+  font-size: 18px;
+  color: #3f2aff;
+  background-image: url('../img/download.png');
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-size: contain;
+}
+
+.main-links__url {
   padding: 24px 49px;
   display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
   background-color: #3f2aff;
 }
 
@@ -63,58 +58,41 @@ body {
   margin-right: 25px;
 }
 
-.main-download {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 18px;
-  color: #3f2aff;
+.container {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 1170px;
 }
 
-.main-download__icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  background-image: url(../img/download.png);
+.title, .text {
+  margin: 0;
 }
 
-.container h1, .container p:not([class^='last-p']) {
+.list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.container__title,
+.text {
   margin-bottom: 40px;
 }
 
-.container h1 {
+.container__title {
   font-weight: 400;
   font-size: 60px;
   color: #333333;
 }
 
-.container h2, .container h3 {
-  margin-bottom: 10px;
-}
-
-.container h2 {
-  font-size: 40px;
-  line-height: 46px;
-  color: #333333;
-}
-
-.container h3 {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 34px;
-  color: #333333;
-}
-
-.container p {
+.text {
   width: 872px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #333333;
 }
 
-.container p.blue {
+.text--is-last {
+  margin-bottom: 0;
+}
+
+.text--is-result {
   border-radius: 20px;
   padding: 50px 95px;
   width: 100%;
@@ -124,73 +102,94 @@ body {
   background-color: #3f2aff;
 }
 
-.container .gray-block {
-  border-radius: 20px;
-  padding: 30px;
-  background-color: #f3f3f3;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.container .gray-block--is-bg.gray-block--is-first {
-  background-image: url(../img/decorate-1.png);
-}
-
-.container .gray-block--is-bg.gray-block--is-last {
-  background-image: url(../img/decorate-2.png);
-}
-
-.container .gray-block:not(:last-child) {
+.container__gray {
   margin-bottom: 40px;
 }
 
-.container .gray-block p {
-  width: 692px;
+.container__gray--is-last,
+.container__gray--is-last .gray__text {
+  margin-bottom: 0;
 }
 
-.container .gray-block p:not([class^='last-p']) {
+.gray {
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.gray__text {
+  width: 692px;
   margin-bottom: 10px;
 }
 
-.container ul {
+.title--is-h2,
+.title--is-h3 {
+  margin-bottom: 10px;
+}
+
+.title--is-h2 {
+  font-size: 40px;
+  line-height: 46px;
+  color: #333333;
+}
+
+.title--is-h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #333333;
+}
+
+.gray--is-decored {
+  background-image: url(../img/decorate-1.png);
+}
+
+.container__gray--is-last.gray--is-decored {
+  background-image: url(../img/decorate-2.png);
+}
+
+.gray .list {
   padding-left: 15px;
 }
 
-.container ul>li::marker {
+.list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.list__item::marker {
   color: #3f2aff;
 }
 
-.container ul>li>a {
+.list__link {
   border-bottom: 1px solid #3f2aff;
   font-size: 20px;
   color: #3f2aff;
 }
 
-.container ul>li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.container figure {
+.pic {
   display: inline-block;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   width: 872px;
   font-size: 0;
-  border: 1px solid #b6b6b6;
 }
 
-.container figure img {
+.photo {
+  margin-bottom: 40px;
+}
+
+.pic .photo {
   margin-bottom: 0;
 }
 
-.container figcaption {
+.pic__ann {
   padding-top: 19px;
   padding-bottom: 19px;
+  border: 1px solid #b6b6b6;
+  border-top: unset;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-}
-
-.container img {
-  margin-bottom: 40px;
 }
