@@ -171,9 +171,13 @@ body {
 
 .pic {
   display: inline-block;
-  margin: 0 0 40px;
   width: 872px;
   font-size: 0;
+  margin: 0;
+}
+
+.pic:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .photo {
@@ -200,4 +204,8 @@ body {
 .container__lastelindents,
 .container__example {
   margin-bottom: 40px;
+}
+
+picture[class*='__pic']:last-child > .photo{
+  margin-bottom: 0;
 }
