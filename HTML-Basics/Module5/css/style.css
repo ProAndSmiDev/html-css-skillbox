@@ -295,13 +295,13 @@ picture[class*='__pic']:last-child > .photo{
   width: 46px;
 }
 
+.modules__main {
+  margin-top: 25px;
+}
+
 .modules-main {
   display: flex;
   flex-direction: column;
-}
-
-h1.modules-main__title {
-  margin-top: 25px;
 }
 
 .modules-title {
